@@ -8,7 +8,7 @@ Este repositório contém o código-fonte e documentação para o projeto desenv
 
 ## Objetivo
 
-O objetivo deste projeto é documentar a maioria dos projetos feitos.
+O objetivo deste projeto é documentar a maioria dos projetos feitos. 
 
 ## Tecnologias Utilizadas
 
