@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/et_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Qual o seu nome?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_data_nascimento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="Data de Nascimento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_nome" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Melhor e-mail"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_data_nascimento" />
+
+        <EditText
+            android:id="@+id/et_telefone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+        <TextView
+            android:id="@+id/tv_satisfacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qual o grau de satisfação com o nosso produto?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_telefone" />
+
+        <RadioGroup
+            android:id="@+id/rg_satisfacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_satisfacao">
+
+            <RadioButton
+                android:id="@+id/rb_satisfacao_1"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/rb_satisfacao_2"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/rb_satisfacao_3"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/rb_satisfacao_4"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/rb_satisfacao_5"
+                android:text="5" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_indicaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você indicaria o nosso produto?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_satisfacao" />
+
+        <RadioGroup
+            android:id="@+id/rg_indicaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_indicaria">
+
+            <RadioButton
+                android:id="@+id/rb_indicaria_1"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/rb_indicaria_2"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/rb_indicaria_3"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/rb_indicaria_4"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/rb_indicaria_5"
+                android:text="5" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_utilidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qual o grau de utilidade que você classifica nosso produto?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_indicaria" />
+
+        <RadioGroup
+            android:id="@+id/rg_utilidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_utilidade">
+
+            <RadioButton
+                android:id="@+id/rb_utilidade_1"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/rb_utilidade_2"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/rb_utilidade_3"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/rb_utilidade_4"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/rb_utilidade_5"
+                android:text="5" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_destaques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quais os pontos que você acredita que nosso produto se destaca?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg_utilidade" />
+
+        <CheckBox
+            android:id="@+id/cb_robustez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robustez"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_destaques" />
+
+        <CheckBox
+            android:id="@+id/cb_agilidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agilidade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_robustez" />
+
+        <CheckBox
+            android:id="@+id/cb_inovacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inovação"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_agilidade" />
+
+        <CheckBox
+            android:id="@+id/cb_lentidao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lentidão"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_inovacao" />
+
+        <CheckBox
+            android:id="@+id/cb_ineficiencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ineficiência"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_lentidao" />
+
+        <CheckBox
+            android:id="@+id/cb_produtividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produtividade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_ineficiencia" />
+
+        <CheckBox
+            android:id="@+id/cb_burocracia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burocracia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_produtividade" />
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_burocracia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

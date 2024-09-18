@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="melhor_e_mail">Melhor e-mail</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="enviar">Enviar</string>
+    <string name="qual_o_grau_de_satisfa_o">Qual o grau de satisfação?</string>
+    <string name="telefone">Telefone</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="qual_o_seu_nome">Qual o seu nome?</string>
+</resources>
