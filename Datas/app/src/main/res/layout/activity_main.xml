@@ -1,0 +1,70 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/labelData1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha a Data 1:" />
+
+        <EditText
+            android:id="@+id/editTextData1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Clique para escolher a data"
+            android:minHeight="60dp" />
+
+        <TextView
+            android:id="@+id/labelData2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha a Data 2:" />
+
+        <EditText
+            android:id="@+id/editTextData2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Clique para escolher a data"
+            android:minHeight="60dp" />
+
+        <TextView
+            android:id="@+id/labelData3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha a Data 3:" />
+
+        <EditText
+            android:id="@+id/editTextData3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:hint="Clique para escolher a data"
+            android:minHeight="60dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar" />
+
+        <TextView
+            android:id="@+id/textoResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado:" />
+
+    </LinearLayout>
+</ScrollView>
