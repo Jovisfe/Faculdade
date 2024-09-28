@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nomeFeriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Feriado" />
+
+    <EditText
+        android:id="@+id/dataFeriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data do Feriado (Clique para selecionar)" />
+
+    <RadioGroup
+        android:id="@+id/tipoFeriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioNacional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nacional" />
+
+        <RadioButton
+            android:id="@+id/radioEstadual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estadual" />
+
+        <RadioButton
+            android:id="@+id/radioMunicipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Municipal" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/estadoFeriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado (opcional)" />
+
+    <EditText
+        android:id="@+id/municipioFeriado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Município (opcional)" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
+
+</LinearLayout>
